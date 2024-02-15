@@ -138,6 +138,13 @@ section {
     color: var(--color-white);
 }
 
+.center{
+    text-align: center;
+    padding-top: 5rem;
+    margin-inline: center;
+    display: block;
+    width: 100%;
+}
 
 
 /*=====================NAVBAR=====================*/
@@ -176,8 +183,6 @@ nav{
 .nav__toggle-btn{
     display: none;
 }
-
-
 
 /*===============Footer===============*/
 footer{
@@ -248,4 +253,16 @@ footer{
 .__deatils__link a:hover{
     color: var(--color-primary);
     text-decoration: underline;
+}
+
+/*===============Error Page===============*/
+.error-page .center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.error-page img{
+    max-width: 600px;
 }
