@@ -566,3 +566,9 @@ textarea {
     gap: 1rem;
     ;
 }
+/*===============ql editor===============*/
+.ql-editor{
+    overflow: scroll;
+    background: var(--color-white);
+    height: 15rem !important;
+}
