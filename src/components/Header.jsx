@@ -13,7 +13,7 @@ function Header() {
           <img src={Logo} alt="EWL" />
         </Link>
         <ul className="nav__menu">
-          <li><Link to="/profile">Easy Web Learner</Link></li>
+          <li><Link to="/profile/easyweblearner">Easy Web Learner</Link></li>
           <li><Link to="/create">Create Posts</Link></li>
           <li><Link to="/authors">Authors</Link></li>
           <li><Link to="/logout">Logout</Link></li>

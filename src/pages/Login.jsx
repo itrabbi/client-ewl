@@ -25,7 +25,7 @@ function Login() {
         <h2>Sign In</h2>
         <form className="form login__form">
           <p className="form__error-message">This is an error message!</p>
-          <input type="email" name="email" placeholder='Email' value={userData.email} onChange={changeInputHandler} />
+          <input type="email" name="email" placeholder='Email' value={userData.email} onChange={changeInputHandler} autoFocus/>
           <div className="password-field">
             <input type={showPassword ? 'text' : 'password'} name="password" placeholder='Password' value={userData.password} onChange={changeInputHandler} className='password'/>
             <button type="button" onClick={() => toggleShowPassword('password')} className="toggle-password-icon">

@@ -4,7 +4,7 @@ import Avatar from "../images/Avatar.png"
 
 function PostAuthor() {
   return (
-    <Link to={`/posts/users/easytolearn`} className="post__author">
+    <Link to={`/posts/users/easyweblearner`} className="post__author">
         <div className="post__author-avatar">
             <img src={Avatar} alt="Easy Web Learner" />
         </div>
