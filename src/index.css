@@ -138,7 +138,7 @@ section {
     color: var(--color-white);
 }
 
-.center{
+.center {
     text-align: center;
     padding-top: 5rem;
     margin-inline: center;
@@ -148,12 +148,12 @@ section {
 
 
 /*=====================NAVBAR=====================*/
-nav{
+nav {
     width: 100vw;
     height: 5rem;
     display: grid;
     place-items: center;
-    background: var(255,255,255,0.5);
+    background: var(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -162,7 +162,7 @@ nav{
     backdrop-filter: blur(20px);
 }
 
-.nav__container{
+.nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,62 +174,63 @@ nav{
     display: block;
 }
 
-.nav__menu{
+.nav__menu {
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.nav__toggle-btn{
+.nav__toggle-btn {
     display: none;
 }
 
 /*===============Footer===============*/
-footer{
+footer {
     background: #111;
     margin-top: 6rem;
     padding-top: 4rem;
 }
 
-.__footer{
+.__footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--color-white);
 }
 
-.__footer h1{
+.__footer h1 {
     color: var(--color-white);
     margin-bottom: 1rem;
 }
 
-.__footer p{
+.__footer p {
     max-width: 40%;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.social__icon{
+.social__icon {
     display: flex;
     gap: 10px;
 }
 
-.social__icon a svg{
+.social__icon a svg {
     font-size: 27px;
     color: var(--color-white);
     border: 1px solid #f2f2ff57;
     padding: 3px;
     background: var(--color-gray-900);
 }
-.social__icon a:hover svg{
+
+.social__icon a:hover svg {
     color: var(--color-primary);
     transition: var(--transition);
 }
 
-.__copyright{
+.__copyright {
     border-top: 2px solid #f2f2ff57;
     color: var(--color-white);
- 
+
 }
 
 .footer__main {
@@ -241,41 +242,41 @@ footer{
     padding: 7px 0px;
 }
 
-.__deatils__link{
+.__deatils__link {
     display: flex;
     gap: 30px;
 }
 
-.__deatils__link a{
+.__deatils__link a {
     color: var(--color-white);
 }
 
-.__deatils__link a:hover{
+.__deatils__link a:hover {
     color: var(--color-primary);
     text-decoration: underline;
 }
 
 /*===============Error Page===============*/
-.error-page .center{
+.error-page .center {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 40px;
 }
 
-.error-page img{
+.error-page img {
     max-width: 600px;
 }
 
 /*===============Home===============*/
 /*===============Post===============*/
-.posts__container{
+.posts__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
 }
 
-.post{
+.post {
     background: var(--color-white);
     padding: 1rem;
     border-radius: var(--radius-4);
@@ -283,25 +284,25 @@ footer{
     cursor: default;
 }
 
-.post:hover{
-    box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.1);
+.post:hover {
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
-.post__thumbnail{
+.post__thumbnail {
     border-radius: var(--radius-3);
     overflow: hidden;
     height: 16rem;
 }
 
-.post__content{
+.post__content {
     margin-top: 1.5rem;
 }
 
-.post__content h3{
+.post__content h3 {
     margin: 1rem 0 0.6rem;
 }
 
-.post__footer{
+.post__footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -309,71 +310,73 @@ footer{
 }
 
 
-.post__author{
+.post__author {
     display: flex;
     gap: 1rem;
     align-items: flex-end;
 }
 
-.post__author-avatar{
-    width :  2.5rem;
+.post__author-avatar {
+    width: 2.5rem;
     aspect-ratio: 1/1;
     border-radius: 120px;
     overflow: hidden;
 }
 
 /*===============Post Detail===============*/
-.post-detail{
+.post-detail {
     width: var(--form-width);
     background: var(--color-white);
     margin-inline: auto;
     padding: 2rem 0;
 }
 
-.post-detail__header{
+.post-detail__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
 }
 
 
-.post-detail__buttons{
-    display:    flex;
+.post-detail__buttons {
+    display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-.post-detail__thumbnail{
+.post-detail__thumbnail {
     margin: 1rem 0;
     height: fit-content;
     max-height: 30rem;
     overflow: hidden;
 }
 
-.post-detail p{
+.post-detail p {
     margin-bottom: 0.7rem;
 }
 
 /*===============Register & Form Styles===============*/
-.form{
+.form {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
 }
 
-input, select, textarea{
+input,
+select,
+textarea {
     width: 100%;
     padding: 0.6rem;
     border-radius: var(--radius-1);
     resize: none;
 }
 
-.form .password{
-    border-top-right-radius: 0 !important; 
+.form .password {
+    border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
-.form__error-message{
+.form__error-message {
     background: var(--color-red);
     color: var(--color-white);
     font-size: 0.8rem;
@@ -383,7 +386,9 @@ input, select, textarea{
     margin-bottom: 1rem;
 }
 
-.register, .login, .create-post{
+.register,
+.login,
+.create-post {
     width: var(--form-width);
     margin-inline: auto;
     height: calc(100vh - 12rem);
@@ -391,33 +396,72 @@ input, select, textarea{
     place-items: center;
 }
 
-.register h2, .login h2, .create-post h2{
+.register h2,
+.login h2,
+.create-post h2 {
     margin-bottom: 2rem;
 }
 
-.register small, .login small{
+.register small,
+.login small {
     display: block;
     margin-top: 1.5rem;
 }
 
-.register small a, .login small a{
+.register small a,
+.login small a {
     color: var(--color-primary);
 }
-.register small a:hover, .login small a:hover{
+
+.register small a:hover,
+.login small a:hover {
     text-decoration: underline;
 }
 
-.password-field{
+.password-field {
     display: flex;
 }
 
-.toggle-password-icon{
+.toggle-password-icon {
     background: var(--color-white);
     padding-right: 8px;
     border-top-right-radius: var(--radius-1);
     border-bottom-right-radius: var(--radius-1);
 }
 
-.toggle-password-icon svg{
+.toggle-password-icon svg {
     font-size: 17px;
+}
+
+/*===============Authors===============*/
+.authors__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.author {
+    background: var(--color-white);
+    padding: 1rem;
+    border: var(--radius-3);
+    display: flex;
+    gap: 1rem;
+    transition: var(--transition);
+    align-items: center;
+}
+
+.author:hover {
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.07);
+}
+
+.author__avatar{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 0.3rem solid var(--color-bg);
+    overflow: hidden ;
+}
+
+.author__info  p{
+    margin-top: 1rem;
 }
