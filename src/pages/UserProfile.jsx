@@ -14,7 +14,7 @@ function UserProfile() {
   return (
     <section className="profile">
       <div className="container profile__container">
-        <Link to={`/mypost/easyweblearner`} className='btn'>My Posts</Link>
+        <Link to={`/myposts/easyweblearner`} className='btn'>My Posts</Link>
 
         <div className="profile__details">
           <div className="avatar__wrapper">
