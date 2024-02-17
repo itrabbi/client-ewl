@@ -22,7 +22,7 @@ function AuthorPosts() {
       setIsLoading(false);
     }
     fechPosts();
-  },[])
+  },[id])
 
   if(isLoading){
     return <Loader/>;

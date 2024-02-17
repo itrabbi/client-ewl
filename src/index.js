@@ -19,6 +19,7 @@ import AuthorPosts from './pages/AuthorPosts';
 import Dashboard from './pages/Dashboard';
 import Logout from './pages/Logout';
 import UserProvider from '../src/context/userContext'
+import CategoryList from './pages/CategoryList';
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home />, },
+      { path: "categorylist", element: <CategoryList /> },
       { path: "posts/:id", element: <Posts /> },
       { path: "register", element: <Register /> },
       { path: "login", element: <Login /> },
