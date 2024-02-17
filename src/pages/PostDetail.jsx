@@ -8,7 +8,7 @@ function PostDetail() {
     <section className='post-detail'>
       <div className="container post-detail__container">
         <div className="post-detail__header">
-          <PostAuthor />
+          {/* <PostAuthor /> */}
           <div className="post-detail__buttons">
             <Link to={`/posts/werwer/edit`} className='btn sm primary'>Edit</Link>
             <Link to={`/posts/werwer/delete`} className='btn sm danger'>Delete</Link>
