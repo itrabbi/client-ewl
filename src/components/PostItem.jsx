@@ -14,7 +14,7 @@ const PostItem = ({postID,category,title,description,authorID,thumbnail,createdA
           alt={title}
         />
       </div>
-      <div className="post_content">
+      <div className="post__content">
         <Link to={`/posts/${postID}`}>
           <h3>{postTitle}</h3>
         </Link>
