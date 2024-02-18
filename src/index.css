@@ -335,6 +335,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
+    align-items: center;
 }
 
 
@@ -342,6 +343,7 @@ footer {
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .post-detail__thumbnail {
@@ -681,7 +683,7 @@ textarea {
         padding: 0;
     }
 
-    .post-detail h1{
+    .post-detail h1 {
         margin-top: 1rem;
     }
 
@@ -691,7 +693,7 @@ textarea {
         width: 100%;
     }
 
-    .form.profile__form{
+    .form.profile__form {
         margin-top: 2.5rem;
         width: 100%;
     }
@@ -701,15 +703,15 @@ textarea {
         gap: 1.2rem;
     }
 
-    .dashboard__posts{
+    .dashboard__posts {
         flex-direction: column;
     }
 
-    .dashboard__posts-info{
+    .dashboard__posts-info {
         gap: 1.5rem;
     }
 
-    .dashboard__posts-thumbnail{
+    .dashboard__posts-thumbnail {
         width: 5rem;
     }
 }
@@ -721,25 +723,35 @@ textarea {
     width: 100%;
     background-color: #fff;
     background-size: 1000px 1000px;
-    background-image: linear-gradient(
-      100deg,
-      #e8e8e8 20%,
-      #fafafa 50%,
-      #e8e8e8 60%
-    );
+    background-image: linear-gradient(100deg,
+            #e8e8e8 20%,
+            #fafafa 50%,
+            #e8e8e8 60%);
     animation: placeholderShimmer 1.5s linear infinite forwards;
-  }
-  
-  /* Skeleton animation*/
-  @keyframes placeholderShimmer {
+}
+
+/* Skeleton animation*/
+@keyframes placeholderShimmer {
     0% {
-      background-position: -500px 0;
+        background-position: -500px 0;
     }
+
     100% {
-      background-position: 500px 0;
+        background-position: 500px 0;
     }
-  }
-  
-  .skeleton.circle {
+}
+
+.skeleton.circle {
     border-radius: 50%;
-  }
+}
+
+.view {
+    display: flex;
+    gap: 6px;
+    margin: 0 !important;
+    align-items: center;
+}
+
+.view svg{
+    font-size: 18px;
+}

@@ -30,7 +30,7 @@ function Posts() {
       {posts.length > 0 ? (
         <div className="container posts__container">
           {posts.map(
-            ({ _id: id, thumbnail, category, title, description,createdAt, creator }) => (
+            ({ _id: id, thumbnail, category, title, description,createdAt, creator , viewCount}) => (
               <PostItem
                 key={id}
                 postID={id} 
@@ -40,6 +40,7 @@ function Posts() {
                 description={description}
                 authorID={creator}
                 createdAt={createdAt}
+                viewCount={viewCount}
               />
             )
           )}
