@@ -19,9 +19,9 @@ import AuthorPosts from './pages/AuthorPosts';
 import Dashboard from './pages/Dashboard';
 import Logout from './pages/Logout';
 import UserProvider from '../src/context/userContext'
-import CategoryList from './pages/CategoryList';
 import AboutUs from './components/AboutUs';
 import TermsConditions from './components/TermsConditions';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 
 const router = createBrowserRouter([
@@ -31,7 +31,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home />, },
-      { path: "categorylist", element: <CategoryList /> },
       { path: "posts/:id", element: <Posts /> },
       { path: "register", element: <Register /> },
       { path: "login", element: <Login /> },
@@ -46,6 +45,7 @@ const router = createBrowserRouter([
       { path: "logout", element: <Logout /> },
       { path: "about-us", element: <AboutUs /> },
       { path: "terms-conditions", element: <TermsConditions /> },
+      { path: "privacy-policy", element: <PrivacyPolicy /> },
 
     ]
   }

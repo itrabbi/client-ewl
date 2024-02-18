@@ -557,9 +557,13 @@ textarea {
     width: 100%;
     align-items: center;
 }
+.dashboard__posts-info h5{
+    font-size: 18px;
+}
 
 .dashboard__posts-thumbnail {
-    width: 4rem;
+    width: 9rem;
+    aspect-ratio: 16/9;
     border-radius: var(--radius-1);
     overflow: hidden;
 }

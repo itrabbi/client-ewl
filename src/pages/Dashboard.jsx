@@ -57,6 +57,7 @@ function Dashboard() {
                     <h5>{post.title}</h5>
                   </div>
                   <div className="dashboard__posts-actions">
+                    <p  className="btn sm">{post.viewCount}</p>
                     <Link to={`/posts/${post._id}`} className="btn sm">View</Link>
                     <Link to={`/posts/${post._id}/edit`} className="btn sm primary">Edit</Link>
                     <DeletePost postId={post._id} />

@@ -40,7 +40,7 @@ function CreatePost() {
     'link', 'image',
   ];
     
-  const POST_CATEGORIES = ["HTML & CSS", "JavaScript", "Projects", "Tools",  "Uncategorized",];
+  const POST_CATEGORIES = ["Html & Css", "JavaScript", "Projects", "Tools",  "Uncategorized",];
 
 
 
