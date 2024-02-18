@@ -3,9 +3,9 @@ import PostAuthor from '../components/PostAuthor'
 import { Link, useParams } from 'react-router-dom'
 import axios from "axios";
 import { UserContext } from '../context/userContext'
-import Loader from '../components/Loader'
 import DeletePost from './DeletePost'
 import { IoIosEye } from "react-icons/io";
+import PostDetailsLoader from '../loader/PostDetailsLoader';
 
 
 
@@ -33,7 +33,12 @@ function PostDetail() {
   }, [])
 
   if(isLoading) {
-    return <Loader />
+    return(
+      <section className="container post-detail">
+        <PostDetailsLoader/>
+    </section>
+    )
+    
   }
 
   return (
@@ -59,4 +64,3 @@ function PostDetail() {
 }
 
 export default PostDetail
-// <Link to={`/posts/easyweblearner/delete`} className='btn sm danger'>Delete</Link>
