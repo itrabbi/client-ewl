@@ -28,8 +28,6 @@ function UserProfile() {
   }, [])
 
 
-
-
   useEffect(() =>{
     const getUsers = async () =>{
       const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/users/${currentUser.id}`,{withCredentials: true, headers: {Authorization: `Bearer ${token}`}} )
@@ -43,8 +41,6 @@ function UserProfile() {
   }, [])
 
 
-  
-
   const changeAvatarHandler = async ()=>{
     setIsAvatarTouched(false); 
     try {
@@ -56,7 +52,6 @@ function UserProfile() {
       console.log(error)
       }
   }
-
 
   const updateUserDetails = async (e)=>{
     e.preventDefault();
@@ -80,7 +75,6 @@ function UserProfile() {
    }
 
   }
-
 
   return (
     <section className="profile">

@@ -4,9 +4,9 @@ function Loader() {
 
 
   return (
-    <>
-      <h1>Loading..........</h1>
-    </>
+    <section className="container">
+      <h1 className="center">Loading...</h1>
+    </section>
   );
 
 }

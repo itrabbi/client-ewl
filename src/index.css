@@ -677,7 +677,7 @@ textarea {
         gap: 20px;
     }
 
-    .post-detail {
+    .post-detail{
         width: 100%;
         background: transparent;
         padding: 0;
@@ -713,6 +713,10 @@ textarea {
 
     .dashboard__posts-thumbnail {
         width: 5rem;
+    }
+    .about-us{
+        width: 100% !important;
+        padding: 0 !important;
     }
 }
 
@@ -754,4 +758,28 @@ textarea {
 
 .view svg{
     font-size: 18px;
+}
+
+.about-us{
+    width: var(--form-width);
+    background: var(--color-white);
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+.about-us h2{
+    margin-bottom: 1rem;
+}
+
+.about-us p{
+    font-size: 16px;
+    margin-bottom: 1.6rem;
+}
+
+.about-us h3{
+    margin-bottom: 0.4rem;
+}
+
+.italic{
+    font-style: italic;
 }

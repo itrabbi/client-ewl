@@ -20,6 +20,8 @@ import Dashboard from './pages/Dashboard';
 import Logout from './pages/Logout';
 import UserProvider from '../src/context/userContext'
 import CategoryList from './pages/CategoryList';
+import AboutUs from './components/AboutUs';
+import TermsConditions from './components/TermsConditions';
 
 
 const router = createBrowserRouter([
@@ -42,6 +44,8 @@ const router = createBrowserRouter([
       { path: "posts/:id/edit", element: <EditPost /> },
       { path: "posts/:id/delete", element: <DeletePost />},
       { path: "logout", element: <Logout /> },
+      { path: "about-us", element: <AboutUs /> },
+      { path: "terms-conditions", element: <TermsConditions /> },
 
     ]
   }
