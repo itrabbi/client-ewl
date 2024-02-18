@@ -25,7 +25,7 @@ function Header() {
           <img src={Logo} alt="EWL" />
         </Link>
        { currentUser?.id && isNavShowing && <ul className="nav__menu">
-          <li><Link to="/profile/easyweblearner" onClick={closwNavHandler}>{currentUser?.name}</Link></li>
+          <li><Link to={`/profile/${currentUser.id}`} onClick={closwNavHandler}>{currentUser?.name}</Link></li>
           <li><Link to="/create" onClick={closwNavHandler}>Create Posts </Link></li>
           <li><Link to="/authors" onClick={closwNavHandler}>Authors</Link></li>
           <li><Link to="/logout" onClick={closwNavHandler}>Logout</Link></li>
